@@ -51,10 +51,10 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run pretest"
     }
   },
   "lint-staged": {
-    "*.js": ["./node_modules/.bin/eslint — fix", "git add"]
+    "*.js": ["./node_modules/.bin/eslint —-fix", "git add"]
   }
 }
